@@ -12,7 +12,7 @@ const RepoList = ({ repos }) => {
               <a href={repo.html_url} target="_blank" rel="noopener noreferrer">
                 <strong>{repo.name}</strong>
               </a>
-              {repo.description && <p className="mb-1">{repo.description}</p>}
+              <p className="mb-1">{repo.description || "Sin descripción existente"}</p>
               {repo.language && (
                 <small className="text-muted">Lenguaje: {repo.language}</small>
               )}
