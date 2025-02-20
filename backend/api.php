@@ -16,3 +16,18 @@ function fetchGitHubData($url) {
 
     return json_decode($response);
 }
+
+if (isset($_GET['username'])) {
+    $username = htmlspecialchars($_GET['user']);
+
+    $userData = fetchGitHubData("https://api.github.com/users/$username");
+    $repos = fetchGitHubData("https://api.github.com/users/$username/repos");
+
+    echo json_encode([
+        "user" => $userData,
+        "repos" => $repos
+    ]);
+} else {
+    echo json_encode(["error" => "No se proporcionó un usuario"]);
+}
+?>
