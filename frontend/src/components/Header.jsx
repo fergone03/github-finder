@@ -5,8 +5,26 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <nav className="navbar navbar-dark bg-dark px-3">
-      <a className="navbar-brand" href="/">GitHub User Finder</a>
-      <Link to="/login" className="btn btn-outline-light">Log In</Link>
+      <div className="container-fluid d-flex justify-content-between align-items-center">
+        
+        {/* Logo alineado a la izquierda */}
+        <div className="col-4 text-start">
+          <a className="navbar-brand">GitHub Finder</a>
+        </div>
+
+        {/* "Buscador" centrado */}
+        <li className="nav-item">
+            <a className="nav-link fw-bold text-dark" href="/">
+                Buscador
+            </a>
+            </li>
+
+        {/* Botón "Log In" alineado a la derecha */}
+        <div className="col-4 text-end">
+          <Link to="/login" className="btn btn-outline-light">Log In</Link>
+        </div>
+
+      </div>
     </nav>
   );
 };
