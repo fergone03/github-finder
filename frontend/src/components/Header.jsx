@@ -13,11 +13,9 @@ const Header = () => {
         </div>
 
         {/* "Buscador" centrado */}
-        <li className="nav-item">
-            <a className="nav-link fw-bold text-dark" href="/">
-                Buscador
-            </a>
-            </li>
+        <div className="col-4 text-center">
+          <Link to="/homepage" className="text-light text-decoration-none fs-5">Buscador</Link>
+        </div>
 
         {/* Botón "Log In" alineado a la derecha */}
         <div className="col-4 text-end">
