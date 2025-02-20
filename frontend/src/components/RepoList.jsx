@@ -2,7 +2,6 @@
 import React from 'react'
 
 const RepoList = ({ repos }) => {
-    repos = [];
     return (
       <div className="mt-3">
         <h4>Repositorios:</h4>

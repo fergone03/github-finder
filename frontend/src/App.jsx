@@ -13,7 +13,8 @@ const App = () => {
       setError(null);
       const response = await fetch(`http://localhost:3000/backend/api.php?user=${username}`);
       const data = await response.json();
-
+      console.log("Datos recibidos:", data);  // 👈 Agrega esta línea
+      
       if (data.error) {
         setError("Usuario no encontrado");
         setUserData(null);
