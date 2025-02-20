@@ -18,7 +18,7 @@ function fetchGitHubData($url) {
     
     // Crear un contexto de flujo con las opciones especificadas
     $context = stream_context_create($options); 
-    // Un contexto de flujo es una forma de personalizar el comportamiento de las funciones de entrada/salida, 
+    // Un stream context permite personalizar el comportamiento de las funciones de entrada/salida de PHP,
     // permitiendo configurar opciones como encabezados HTTP o autenticación al hacer solicitudes.
 
     // Obtener el contenido de la URL usando el contexto de flujo
@@ -32,11 +32,11 @@ function fetchGitHubData($url) {
 }
 
 // Verificar si se ha proporcionado un nombre de usuario en la URL
-if (isset($_GET['username'])) { 
+if (isset($_GET['user']) && !empty($_GET['user'])) {
     // isset() comprueba si la variable está definida y no es NULL, evitando errores al acceder a valores no definidos.
 
     // Sanitizar el nombre de usuario proporcionado para evitar ataques XSS
-    $username = htmlspecialchars($_GET['username']);
+    $username = htmlspecialchars($_GET['user']);
     // htmlspecialchars() convierte caracteres especiales en entidades HTML, previniendo la ejecución de código malicioso en la salida.
 
     // Obtener datos del usuario de GitHub
@@ -50,7 +50,6 @@ if (isset($_GET['username'])) {
         "repos" => $repos
     ]);
 } else {
-    // Devolver un mensaje de error si no se proporcionó un nombre de usuario
     echo json_encode(["error" => "No se proporcionó un usuario"]);
 }
 ?>
