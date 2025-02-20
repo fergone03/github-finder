@@ -4,7 +4,8 @@ header('Access-Control-Allow-Origin: *');
 // Establece el tipo de contenido a JSON
 header('Content-Type: application/json');
 // Permite solo el método GET
-header('Access-Control-Allow-Methods: GET');
+header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
+header("Access-Control-Allow-Headers: Content-Type");
 
 // Función para obtener datos de GitHub
 function fetchGitHubData($url) {
@@ -37,8 +38,6 @@ if (isset($_GET['user']) && !empty($_GET['user'])) {
 
     // Sanitizar el nombre de usuario proporcionado para evitar ataques XSS
     $username = htmlspecialchars($_GET['user']);
-    // htmlspecialchars() convierte caracteres especiales en entidades HTML, previniendo la ejecución de código malicioso en la salida.
-
     // Obtener datos del usuario de GitHub
     $userData = fetchGitHubData("https://api.github.com/users/$username");
     // Obtener repositorios del usuario de GitHub

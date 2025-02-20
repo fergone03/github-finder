@@ -1,35 +1,41 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import SearchBar from "./components/SearchBar";
+import UserCard from "./components/UserCard";
+import RepoList from "./components/RepoList";
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
+  const [userData, setUserData] = useState(null);
+  const [repos, setRepos] = useState([]);
+  const [error, setError] = useState(null);
+
+  const fetchGitHubUser = async (username) => {
+    try {
+      setError(null);
+      const response = await fetch(`http://localhost:3000/backend/api.php?user=${username}`);
+      const data = await response.json();
+
+      if (data.error) {
+        setError("Usuario no encontrado");
+        setUserData(null);
+        setRepos([]);
+      } else {
+        setUserData(data.user);
+        setRepos(data.repos);
+      }
+    } catch {
+      setError("Error al obtener los datos");
+    }
+  };
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <div className="container mt-5">
+      <h2 className="text-center">Buscador de Usuarios de GitHub</h2>
+      <SearchBar onSearch={fetchGitHubUser} />
+      {error && <p className="text-danger">{error}</p>}
+      {userData && <UserCard user={userData} />}
+      {repos.length > 0 && <RepoList repos={repos} />}
+    </div>
+  );
+};
 
-export default App
+export default App;
