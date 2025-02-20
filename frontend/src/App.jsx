@@ -13,7 +13,7 @@ const App = () => {
       setError(null);
       const response = await fetch(`http://localhost:3000/backend/api.php?user=${username}`);
       const data = await response.json();
-      console.log("Datos recibidos:", data);  // 👈 Agrega esta línea
+      console.log("Datos recibidos:", data);  
       
       if (data.error) {
         setError("Usuario no encontrado");
@@ -30,7 +30,8 @@ const App = () => {
 
   return (
     <div className="container mt-5">
-      <h2 className="text-center">Buscador de Usuarios de GitHub</h2>
+      <h2 className="text-center">Buscador de usuarios en GitHub</h2>
+      <h5 className="text-center">Este es un proyecto para probar la integración de una api</h5>
       <SearchBar onSearch={fetchGitHubUser} />
       {error && <p className="text-danger">{error}</p>}
       {userData && <UserCard user={userData} />}
