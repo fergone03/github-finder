@@ -10,10 +10,10 @@ const LoginPage = () => {
   const [successMessage, setSuccessMessage] = useState("");
   const navigate = useNavigate();
 
+  // Evitar que un usuario logueado pueda volver a la página de login
   useEffect(() => {
-    // Verifica si el usuario ya está autenticado
-    const loggedUser = localStorage.getItem("loggedUser");
-    if (loggedUser) {
+    const user = JSON.parse(localStorage.getItem("user"));
+    if (user) {
       navigate("/homepage");
     }
   }, [navigate]);
@@ -41,12 +41,13 @@ const LoginPage = () => {
       return;
     }
 
-    // Guardar el usuario en localStorage para mantener la sesión
-    localStorage.setItem("loggedUser", JSON.stringify(user));
-
+    // Guardar el usuario en localStorage para persistencia de sesión
+    localStorage.setItem("user", JSON.stringify(user));
     setSuccessMessage("Inicio de sesión exitoso");
+
+    // Redirigir a la homepage después de 1.5 segundos
     setTimeout(() => {
-      navigate("/homepage");
+      window.location.href = "/homepage"; // Esto forzará la recarga completa de la página
     }, 1500);
   };
 
