@@ -8,24 +8,41 @@ const Footer = () => {
         <footer className="py-3 my-4">
             <ul className="nav justify-content-center border-bottom pb-3 mb-3">
                 <li className="nav-item">
-                <Link to="/homepage" className={`nav-link px-2 text-body-secondary ${styles.navLink}`}>
+                    <Link 
+                        to="/homepage" 
+                        className={`nav-link px-2 text-body-secondary ${styles.navLink}`}
+                    >
                         Home
                     </Link>                    
-                    </li>
+                </li>
                 <li className="nav-item">
-                <Link to="/" className={`nav-link px-2 text-body-secondary ${styles.navLink}`}>
+                    <Link 
+                        to="/" 
+                        className={`nav-link px-2 text-body-secondary ${styles.navLink}`}
+                    >
                         Landing
-                    </Link>                       </li>
+                    </Link>                       
+                </li>
                 <li className="nav-item">
-                <Link to="/login" className={`nav-link px-2 text-body-secondary ${styles.navLink}`}>
+                    <Link 
+                        to="/login" 
+                        className={`nav-link px-2 text-body-secondary ${styles.navLink}`}
+                    >
                         Sign Up
-                    </Link>                       </li>
+                    </Link>                       
+                </li>
                 <li className="nav-item">
-                <Link to="/details" className={`nav-link px-2 text-body-secondary ${styles.navLink}`}>
+                    <Link 
+                        to="/about" 
+                        className={`nav-link px-2 text-body-secondary ${styles.navLink}`}
+                    >
                         Detalles
-                    </Link>                       </li>
+                    </Link>                       
+                </li>
             </ul>
-            <p className="text-center text-body-secondary"> 2025 Esteban Fernández</p>
+            <p className="text-center text-body-secondary">
+                2025 Esteban Fernández
+            </p>
         </footer>
     )
 }
