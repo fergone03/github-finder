@@ -17,7 +17,7 @@ function fetchGitHubData($url) {
         ]
     ];
     
-    // Crear un contexto de flujo con las opciones especificadas
+    // Crear un stream context con las opciones especificadas
     $context = stream_context_create($options); 
     // Un stream context permite personalizar el comportamiento de las funciones de entrada/salida de PHP,
     // permitiendo configurar opciones como encabezados HTTP o autenticación al hacer solicitudes.
