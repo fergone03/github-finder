@@ -1,5 +1,5 @@
 // eslint-disable-next-line no-unused-vars
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { supabase } from "../supabaseClient";
 
@@ -9,6 +9,14 @@ const LoginPage = () => {
   const [errorMessage, setErrorMessage] = useState("");
   const [successMessage, setSuccessMessage] = useState("");
   const navigate = useNavigate();
+
+  useEffect(() => {
+    // Verifica si el usuario ya está autenticado
+    const loggedUser = localStorage.getItem("loggedUser");
+    if (loggedUser) {
+      navigate("/homepage");
+    }
+  }, [navigate]);
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -32,6 +40,9 @@ const LoginPage = () => {
       setErrorMessage("Correo o contraseña incorrectos");
       return;
     }
+
+    // Guardar el usuario en localStorage para mantener la sesión
+    localStorage.setItem("loggedUser", JSON.stringify(user));
 
     setSuccessMessage("Inicio de sesión exitoso");
     setTimeout(() => {
