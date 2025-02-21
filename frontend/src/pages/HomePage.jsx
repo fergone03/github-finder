@@ -3,6 +3,7 @@ import SearchBar from "../components/SearchBar";
 import UserCard from "../components/UserCard";
 import RepoList from "../components/RepoList";
 
+
 // Componente principal de la página de inicio
 const HomePage = () => {
   // Estado para almacenar los datos del usuario

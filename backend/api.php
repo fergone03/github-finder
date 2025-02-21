@@ -36,7 +36,7 @@ function fetchGitHubData($url) {
 if (isset($_GET['user']) && !empty($_GET['user'])) {
     // isset() comprueba si la variable está definida y no es NULL, evitando errores al acceder a valores no definidos.
 
-    // Sanitizar el nombre de usuario proporcionado para evitar ataques XSS
+    // Trucar el nombre de usuario proporcionado para evitar ataques XSS
     $username = htmlspecialchars($_GET['user']);
     // Obtener datos del usuario de GitHub
     $userData = fetchGitHubData("https://api.github.com/users/$username");
