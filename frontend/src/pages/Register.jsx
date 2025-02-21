@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
-import React from 'react'
-import { useState } from "react";
+import React, { useState } from "react";
+import { supabase } from "../supabaseClient";
 import { Link } from "react-router-dom";
 
 const Register = () => {
@@ -9,20 +9,40 @@ const Register = () => {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleRegister = async (e) => {
     e.preventDefault();
 
     if (password !== confirmPassword) {
       alert("Las contraseñas no coinciden");
       return;
     }
+
+    // Insertar el usuario en la tabla "usuariosAPIGitHub"
+    const { error } = await supabase
+      .from("usuariosAPIGitHub")
+      .insert([
+        {
+          username,
+          email,
+          password, 
+          created_at: new Date(),
+        },
+      ]);
+
+    if (error) {
+      console.error("Error al registrar usuario:", error.message);
+      alert("Error al registrar usuario.");
+      return;
+    }
+
+    alert("Registro exitoso");
   };
 
   return (
-    <div className="container d-flex justify-content-center align-items-center"  style={{ minHeight: "69vh" }}>
+    <div className="container d-flex justify-content-center align-items-center" style={{ minHeight: "69vh" }}>
       <div className="card p-4 shadow-lg" style={{ maxWidth: "400px", width: "100%" }}>
         <h2 className="text-center mb-4">Registro</h2>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleRegister}>
           <div className="mb-3">
             <label className="form-label">Nombre de usuario:</label>
             <input 
@@ -72,4 +92,5 @@ const Register = () => {
     </div>
   );
 };
-export default Register
+
+export default Register;
