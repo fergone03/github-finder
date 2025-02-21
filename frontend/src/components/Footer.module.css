@@ -2,18 +2,19 @@
   position: relative;
   display: inline-block;
   text-decoration: none;
-  padding-bottom: 3px; 
-  color: white; 
+  padding-bottom: 3px;
 }
 
 .navLink::after {
   content: "";
   position: absolute;
-  width: 100%;
+  width: 60%;
   height: 2px;
-  bottom: -2px; 
+  bottom: -2px;
   left: 0;
-  background-color: white;
+  right: 0;
+  margin: auto;
+  background-color: gray;
   transform: scaleX(0);
   transition: transform 0.3s ease-in-out;
 }
