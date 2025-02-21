@@ -38,7 +38,7 @@ const HomePage = () => {
   };
 
   return (
-    <div className="container mt-5">
+    <div className="container mt-5" style={{ minHeight: "64vh" }}>
       <h2 className="text-center">Buscador de usuarios en GitHub</h2>
       <h5 className="text-center">Este es un proyecto para probar la integración de una API</h5>
       {/* Componente de barra de búsqueda, se le pasa la función fetchGitHubUser como prop */}
