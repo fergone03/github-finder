@@ -2,26 +2,25 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const LoginPage = () => {
-  const [email, setEmail] = useState("");
+  const [userOrEmail, setUserOrEmail] = useState("");
   const [password, setPassword] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Email:", email, "Password:", password);
   };
 
   return (
-    <div className="container d-flex justify-content-center align-items-center mt-5"  style={{ minHeight: "65vh" }}>
+    <div className="container d-flex justify-content-center align-items-center"  style={{ minHeight: "68vh" }}>
       <div className="card p-4 shadow-lg" style={{ maxWidth: "400px", width: "100%" }}>
-        <h2 className="text-center mb-4">Iniciar Sesión</h2>
+        <h2 className="text-center mb-4">Iniciar sesión</h2>
         <form onSubmit={handleSubmit}>
           <div className="mb-3">
-            <label className="form-label">Email</label>
+            <label className="form-label">Usuario o Correo</label>
             <input 
-              type="email" 
+              type="text" 
               className="form-control" 
-              value={email} 
-              onChange={(e) => setEmail(e.target.value)} 
+              value={userOrEmail} 
+              onChange={(e) => setUserOrEmail(e.target.value)} 
               required 
             />
           </div>
@@ -35,7 +34,7 @@ const LoginPage = () => {
               required 
             />
           </div>
-          <button type="submit" className="btn btn-dark w-100">Iniciar Sesión</button>
+          <button type="submit" className="btn btn-dark w-100">Iniciar sesión</button>
         </form>
         <p className="mt-3 text-center">
           ¿No tienes cuenta? <Link to="/register">Regístrate</Link>
