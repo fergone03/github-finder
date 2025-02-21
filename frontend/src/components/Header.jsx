@@ -1,23 +1,29 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import { Link } from "react-router-dom";
+import styles from "./Header.module.css";
 
 const Header = () => {
   return (
     <nav className="navbar navbar-dark bg-dark px-3">
       <div className="container-fluid d-flex justify-content-between align-items-center">
         
-        {/* Logo alineado a la izquierda */}
+        {/* Logo alineado a la izquierda (inicio) */}
         <div className="col-4 text-start">
-          <a className="navbar-brand">GitHub Finder</a>
+          <div className="d-flex flex-column">
+            <a className="navbar-brand">GitHub Finder</a>
+            <a className="navbar-brand">Proyecto de integración de API</a>
+          </div>
         </div>
 
         {/* "Buscador" centrado */}
         <div className="col-4 text-center">
-          <Link to="/homepage" className="text-light text-decoration-none fs-5">Buscador</Link>
+          <Link to="/homepage" className={`text-light text-decoration-none fs-5 ${styles.navLink}`}>
+            Buscador
+          </Link>
         </div>
 
-        {/* Botón "Log In" alineado a la derecha */}
+        {/* Botón "Log In" alineado a la derecha (fin) */}
         <div className="col-4 text-end">
           <Link to="/login" className="btn btn-outline-light">Log In</Link>
         </div>

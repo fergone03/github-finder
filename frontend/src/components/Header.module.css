@@ -2,7 +2,7 @@
   position: relative;
   display: inline-block;
   text-decoration: none;
-  padding-bottom: 5px;
+  padding-bottom: 3px; /* Reduce el espacio entre el texto y la línea */
   color: white; /* Ajusta el color según tu diseño */
 }
 
@@ -11,7 +11,7 @@
   position: absolute;
   width: 100%;
   height: 2px;
-  bottom: 0;
+  bottom: -2px; /* Acerca la línea al texto */
   left: 0;
   background-color: white;
   transform: scaleX(0);
