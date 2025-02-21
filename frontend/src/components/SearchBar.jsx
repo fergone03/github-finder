@@ -17,14 +17,13 @@ const SearchBar = ({ onSearch }) => {     // La prop 'onSearch' se usa para mane
     };
 
     return (
-        <form onSubmit={manejarEnvio} className="d-flex mb-3">
+        <form onSubmit={manejarEnvio} className="d-flex mb-3 justify-content-center">
             <input
                 type="text"
-                className="form-control"
+                className="form-control w-25"
                 placeholder="Buscar usuario de GitHub..."
                 value={username}
-                onChange={(e) => setUsername(e.target.value)}    // 'e.target.value' obtiene el valor actual del input y actualiza el estado 'username'.
-
+                onChange={(e) => setUsername(e.target.value)}
             /> 
             <button type="submit" className="btn btn-primary ms-2">Buscar</button>
         </form>
