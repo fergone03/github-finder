@@ -15,7 +15,7 @@ const LoginPage = () => {
         <h2 className="text-center mb-4">Iniciar sesión</h2>
         <form onSubmit={handleSubmit}>
           <div className="mb-3">
-            <label className="form-label">Usuario o Correo</label>
+            <label className="form-label">Usuario o Correo:</label>
             <input 
               type="text" 
               className="form-control" 
@@ -25,7 +25,7 @@ const LoginPage = () => {
             />
           </div>
           <div className="mb-3">
-            <label className="form-label">Contraseña</label>
+            <label className="form-label">Contraseña:</label>
             <input 
               type="password" 
               className="form-control" 

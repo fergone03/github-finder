@@ -5,6 +5,7 @@ import Login from "./pages/LoginPage";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import AboutPage from "./pages/AboutPage";
+import Register from "./pages/Register";
 
 const App = () => {
   return (
@@ -15,6 +16,8 @@ const App = () => {
             <Route path="/homepage" element={<HomePage />} />
             <Route path="/login" element={<Login />} />
             <Route path="/about" element={<AboutPage />} />
+            <Route path="/register" element={<Register />} />
+
           </Routes>
         <Footer />
     </Router>
