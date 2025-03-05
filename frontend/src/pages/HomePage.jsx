@@ -17,7 +17,7 @@ const HomePage = () => {
   const fetchGitHubUser = async (username) => {
     try {
       setError(null); // Limpiar errores previos
-      const response = await fetch(`http://localhost:3000/backend/api.php?user=${username}`);
+      const response = await fetch(`http://githubfinder.infy.uk/backend/api.php?user=${username}`);
       const data = await response.json();
       console.log("Datos recibidos:", data);
 
