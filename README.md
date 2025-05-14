@@ -1,6 +1,6 @@
 <div align="left" style="position: relative;">
 <img src="https://img.icons8.com/?size=512&id=55494&format=png" align="right" width="30%" style="margin: -20px 0 0 20px;">
-<h1>INFO-REPOSITORIOS</h1>
+<h1>GITHUB-FINDER</h1>
 <p align="left">
 </p>
 <p align="left">
@@ -53,7 +53,7 @@ Se exploran varias herramientas de desarrollo web, como React para la construcci
 ## 📁 Estructura del Proyecto
 
 ```sh
-└── info-repositorios/
+└── GITHUB-FINDER/
     ├── README.md
     ├── backend
     │   ├── README.md
@@ -73,7 +73,7 @@ Se exploran varias herramientas de desarrollo web, como React para la construcci
 
 ### 📂 Índice del Proyecto
 <details open>
-    <summary><b><code>INFO-REPOSITORIOS/</code></b></summary>
+    <summary><b><code>GITHUB-FINDER/</code></b></summary>
         <details> <!-- __root__ Submodule -->
             <summary><b>__root__</b></summary>
             <blockquote>
@@ -86,7 +86,7 @@ Se exploran varias herramientas de desarrollo web, como React para la construcci
             <blockquote>
                 <table>
                 <tr>
-                    <td><b><a href='https://github.com/fergone03/info-repositorios/blob/master/backend/api.php'>api.php</a></b></td>
+                    <td><b><a href='https://github.com/fergone03/GITHUB-FINDER/blob/master/backend/api.php'>api.php</a></b></td>
                     <td><code>❯ Archivo principal de la API de GitHub</code></td>
                 </tr>
                 </table>
@@ -97,23 +97,23 @@ Se exploran varias herramientas de desarrollo web, como React para la construcci
             <blockquote>
                 <table>
                 <tr>
-                    <td><b><a href='https://github.com/fergone03/info-repositorios/blob/master/frontend/package-lock.json'>package-lock.json</a></b></td>
+                    <td><b><a href='https://github.com/fergone03/GITHUB-FINDER/blob/master/frontend/package-lock.json'>package-lock.json</a></b></td>
                     <td><code>❯ Archivo de dependencias</code></td>
                 </tr>
                 <tr>
-                    <td><b><a href='https://github.com/fergone03/info-repositorios/blob/master/frontend/vite.config.js'>vite.config.js</a></b></td>
+                    <td><b><a href='https://github.com/fergone03/GITHUB-FINDER/blob/master/frontend/vite.config.js'>vite.config.js</a></b></td>
                     <td><code>❯ Configuración de Vite</code></td>
                 </tr>
                 <tr>
-                    <td><b><a href='https://github.com/fergone03/info-repositorios/blob/master/frontend/package.json'>package.json</a></b></td>
+                    <td><b><a href='https://github.com/fergone03/GITHUB-FINDER/blob/master/frontend/package.json'>package.json</a></b></td>
                     <td><code>❯ Archivo de configuración de npm</code></td>
                 </tr>
                 <tr>
-                    <td><b><a href='https://github.com/fergone03/info-repositorios/blob/master/frontend/index.html'>index.html</a></b></td>
+                    <td><b><a href='https://github.com/fergone03/GITHUB-FINDER/blob/master/frontend/index.html'>index.html</a></b></td>
                     <td><code>❯ Archivo HTML principal</code></td>
                 </tr>
                 <tr>
-                    <td><b><a href='https://github.com/fergone03/info-repositorios/blob/master/frontend/eslint.config.js'>eslint.config.js</a></b></td>
+                    <td><b><a href='https://github.com/fergone03/GITHUB-FINDER/blob/master/frontend/eslint.config.js'>eslint.config.js</a></b></td>
                     <td><code>❯ Configuración de ESLint</code></td>
                 </tr>
                 </table>
@@ -122,19 +122,19 @@ Se exploran varias herramientas de desarrollo web, como React para la construcci
                     <blockquote>
                         <table>
                         <tr>
-                            <td><b><a href='https://github.com/fergone03/info-repositorios/blob/master/frontend/src/index.css'>index.css</a></b></td>
+                            <td><b><a href='https://github.com/fergone03/GITHUB-FINDER/blob/master/frontend/src/index.css'>index.css</a></b></td>
                             <td><code>❯ Estilos globales</code></td>
                         </tr>
                         <tr>
-                            <td><b><a href='https://github.com/fergone03/info-repositorios/blob/master/frontend/src/App.css'>App.css</a></b></td>
+                            <td><b><a href='https://github.com/fergone03/GITHUB-FINDER/blob/master/frontend/src/App.css'>App.css</a></b></td>
                             <td><code>❯ Estilos de la aplicación</code></td>
                         </tr>
                         <tr>
-                            <td><b><a href='https://github.com/fergone03/info-repositorios/blob/master/frontend/src/App.jsx'>App.jsx</a></b></td>
+                            <td><b><a href='https://github.com/fergone03/GITHUB-FINDER/blob/master/frontend/src/App.jsx'>App.jsx</a></b></td>
                             <td><code>❯ Componente principal de la aplicación</code></td>
                         </tr>
                         <tr>
-                            <td><b><a href='https://github.com/fergone03/info-repositorios/blob/master/frontend/src/main.jsx'>main.jsx</a></b></td>
+                            <td><b><a href='https://github.com/fergone03/GITHUB-FINDER/blob/master/frontend/src/main.jsx'>main.jsx</a></b></td>
                             <td><code>❯ Punto de entrada de la aplicación</code></td>
                         </tr>
                         </table>
@@ -143,31 +143,31 @@ Se exploran varias herramientas de desarrollo web, como React para la construcci
                             <blockquote>
                                 <table>
                                 <tr>
-                                    <td><b><a href='https://github.com/fergone03/info-repositorios/blob/master/frontend/src/components/Header.jsx'>Header.jsx</a></b></td>
+                                    <td><b><a href='https://github.com/fergone03/GITHUB-FINDER/blob/master/frontend/src/components/Header.jsx'>Header.jsx</a></b></td>
                                     <td><code>❯ Componente del Header</code></td>
                                 </tr>
                                 <tr>
-                                    <td><b><a href='https://github.com/fergone03/info-repositorios/blob/master/frontend/src/components/UserCard.jsx'>UserCard.jsx</a></b></td>
+                                    <td><b><a href='https://github.com/fergone03/GITHUB-FINDER/blob/master/frontend/src/components/UserCard.jsx'>UserCard.jsx</a></b></td>
                                     <td><code>❯ Componente de tarjeta de usuario</code></td>
                                 </tr>
                                 <tr>
-                                    <td><b><a href='https://github.com/fergone03/info-repositorios/blob/master/frontend/src/components/SearchBar.jsx'>SearchBar.jsx</a></b></td>
+                                    <td><b><a href='https://github.com/fergone03/GITHUB-FINDER/blob/master/frontend/src/components/SearchBar.jsx'>SearchBar.jsx</a></b></td>
                                     <td><code>❯ Componente de barra de búsqueda</code></td>
                                 </tr>
                                 <tr>
-                                    <td><b><a href='https://github.com/fergone03/info-repositorios/blob/master/frontend/src/components/Footer.module.css'>Footer.module.css</a></b></td>
+                                    <td><b><a href='https://github.com/fergone03/GITHUB-FINDER/blob/master/frontend/src/components/Footer.module.css'>Footer.module.css</a></b></td>
                                     <td><code>❯ Estilos del footer</code></td>
                                 </tr>
                                 <tr>
-                                    <td><b><a href='https://github.com/fergone03/info-repositorios/blob/master/frontend/src/components/Footer.jsx'>Footer.jsx</a></b></td>
+                                    <td><b><a href='https://github.com/fergone03/GITHUB-FINDER/blob/master/frontend/src/components/Footer.jsx'>Footer.jsx</a></b></td>
                                     <td><code>❯ Componente del footer</code></td>
                                 </tr>
                                 <tr>
-                                    <td><b><a href='https://github.com/fergone03/info-repositorios/blob/master/frontend/src/components/Header.module.css'>Header.module.css</a></b></td>
+                                    <td><b><a href='https://github.com/fergone03/GITHUB-FINDER/blob/master/frontend/src/components/Header.module.css'>Header.module.css</a></b></td>
                                     <td><code>❯ Estilos del Header</code></td>
                                 </tr>
                                 <tr>
-                                    <td><b><a href='https://github.com/fergone03/info-repositorios/blob/master/frontend/src/components/RepoList.jsx'>RepoList.jsx</a></b></td>
+                                    <td><b><a href='https://github.com/fergone03/GITHUB-FINDER/blob/master/frontend/src/components/RepoList.jsx'>RepoList.jsx</a></b></td>
                                     <td><code>❯ Componente de lista de repositorios</code></td>
                                 </tr>
                                 </table>
@@ -178,19 +178,19 @@ Se exploran varias herramientas de desarrollo web, como React para la construcci
                             <blockquote>
                                 <table>
                                 <tr>
-                                    <td><b><a href='https://github.com/fergone03/info-repositorios/blob/master/frontend/src/pages/AboutPage.jsx'>AboutPage.jsx</a></b></td>
+                                    <td><b><a href='https://github.com/fergone03/GITHUB-FINDER/blob/master/frontend/src/pages/AboutPage.jsx'>AboutPage.jsx</a></b></td>
                                     <td><code>❯ Página de información</code></td>
                                 </tr>
                                 <tr>
-                                    <td><b><a href='https://github.com/fergone03/info-repositorios/blob/master/frontend/src/pages/HomePage.jsx'>HomePage.jsx</a></b></td>
+                                    <td><b><a href='https://github.com/fergone03/GITHUB-FINDER/blob/master/frontend/src/pages/HomePage.jsx'>HomePage.jsx</a></b></td>
                                     <td><code>❯ Página de inicio</code></td>
                                 </tr>
                                 <tr>
-                                    <td><b><a href='https://github.com/fergone03/info-repositorios/blob/master/frontend/src/pages/Landing.jsx'>Landing.jsx</a></b></td>
+                                    <td><b><a href='https://github.com/fergone03/GITHUB-FINDER/blob/master/frontend/src/pages/Landing.jsx'>Landing.jsx</a></b></td>
                                     <td><code>❯ Página de landing</code></td>
                                 </tr>
                                 <tr>
-                                    <td><b><a href='https://github.com/fergone03/info-repositorios/blob/master/frontend/src/pages/LoginPage.jsx'>LoginPage.jsx</a></b></td>
+                                    <td><b><a href='https://github.com/fergone03/GITHUB-FINDER/blob/master/frontend/src/pages/LoginPage.jsx'>LoginPage.jsx</a></b></td>
                                     <td><code>❯ Página de inicio de sesión</code></td>
                                 </tr>
                                 </table>
@@ -207,7 +207,7 @@ Se exploran varias herramientas de desarrollo web, como React para la construcci
 
 ### ☑️ Prerrequisitos
 
-Antes de comenzar con info-repositorios, asegúrate de que tu entorno de ejecución cumpla con los siguientes requisitos:
+Antes de comenzar con GITHUB-FINDER, asegúrate de que tu entorno de ejecución cumpla con los siguientes requisitos:
 
 - **Lenguaje de Programación:** JavaScript
 - **Gestor de Paquetes:** Npm
@@ -216,18 +216,18 @@ Antes de comenzar con info-repositorios, asegúrate de que tu entorno de ejecuci
 
 ### ⚙️ Instalación
 
-Instala info-repositorios usando uno de los siguientes métodos:
+Instala GITHUB-FINDER usando uno de los siguientes métodos:
 
 **Construir desde el código fuente:**
 
-1. Clona el repositorio info-repositorios:
+1. Clona el repositorio GITHUB-FINDER:
 ```sh
-❯ git clone https://github.com/fergone03/info-repositorios
+❯ git clone https://github.com/fergone03/GITHUB-FINDER
 ```
 
 2. Navega al directorio del proyecto:
 ```sh
-❯ cd info-repositorios
+❯ cd GITHUB-FINDER
 ```
 
 3. Instala las dependencias del proyecto:
@@ -243,7 +243,7 @@ Instala info-repositorios usando uno de los siguientes métodos:
 
 
 ### 🤖 Uso
-Ejecuta info-repositorios usando el siguiente comando desde el directorio frontend:
+Ejecuta GITHUB-FINDER usando el siguiente comando desde el directorio frontend:
 **Usando `npm`** &nbsp; [<img align="center" src="https://img.shields.io/badge/npm-CB3837.svg?style={badge_style}&logo=npm&logoColor=white" />](https://www.npmjs.com/)
 
 ```sh
