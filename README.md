@@ -43,7 +43,6 @@ Se exploran varias herramientas de desarrollo web, como React para la construcci
 - **Backend con PHP:** Utiliza PHP puro para manejar las solicitudes de la API y la lógica del servidor.
 - **Gestión de Estado:** Maneja el estado de la aplicación de manera eficiente utilizando React hooks.
 - **Componentes Reutilizables:** La aplicación está construida con componentes reutilizables para facilitar el mantenimiento y la escalabilidad.
-- **Pruebas Automatizadas:** Incluye un conjunto de pruebas para asegurar la calidad del código y el correcto funcionamiento de la aplicación.
 - **Documentación Completa:** Proporciona una documentación detallada para facilitar la instalación, uso y contribución al proyecto.
 
 ![Imagen de la aplicación](frontend/src/assets/thumbnail-mainpage.webp)
